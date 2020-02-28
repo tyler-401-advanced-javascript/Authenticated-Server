@@ -309,6 +309,22 @@
         "version": "6e19418b881b57998d218487d41d85534c7fa5ab329bbc72afe571e7683d774a",
         "signature": "6e19418b881b57998d218487d41d85534c7fa5ab329bbc72afe571e7683d774a"
       },
+      "./node_modules/dotenv/types/index.d.ts": {
+        "version": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528",
+        "signature": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528"
+      },
+      "./node_modules/@types/bson/index.d.ts": {
+        "version": "92c84d1e3b77898d09f4f1f36a12ca85f371a623d9f053bb4792587ae14ad564",
+        "signature": "92c84d1e3b77898d09f4f1f36a12ca85f371a623d9f053bb4792587ae14ad564"
+      },
+      "./node_modules/@types/mongodb/index.d.ts": {
+        "version": "1c30705453217250e75dbfd12d16f69d69105330b6250113070ac882f0de8044",
+        "signature": "1c30705453217250e75dbfd12d16f69d69105330b6250113070ac882f0de8044"
+      },
+      "./node_modules/@types/mongoose/index.d.ts": {
+        "version": "09b221e4104ce8093b835b48c5725b03aca8f232ed578ebacb17cd96415cd0c5",
+        "signature": "09b221e4104ce8093b835b48c5725b03aca8f232ed578ebacb17cd96415cd0c5"
+      },
       "./node_modules/@types/range-parser/index.d.ts": {
         "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
         "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b"
@@ -337,25 +353,13 @@
         "version": "6e1c6fe784daeba017901db7766e6b872f535defe33b0e0196d2a12c26f50517",
         "signature": "6e1c6fe784daeba017901db7766e6b872f535defe33b0e0196d2a12c26f50517"
       },
-      "./node_modules/@types/bson/index.d.ts": {
-        "version": "92c84d1e3b77898d09f4f1f36a12ca85f371a623d9f053bb4792587ae14ad564",
-        "signature": "92c84d1e3b77898d09f4f1f36a12ca85f371a623d9f053bb4792587ae14ad564"
-      },
-      "./node_modules/@types/mongodb/index.d.ts": {
-        "version": "1c30705453217250e75dbfd12d16f69d69105330b6250113070ac882f0de8044",
-        "signature": "1c30705453217250e75dbfd12d16f69d69105330b6250113070ac882f0de8044"
-      },
-      "./node_modules/@types/mongoose/index.d.ts": {
-        "version": "09b221e4104ce8093b835b48c5725b03aca8f232ed578ebacb17cd96415cd0c5",
-        "signature": "09b221e4104ce8093b835b48c5725b03aca8f232ed578ebacb17cd96415cd0c5"
-      },
       "./node_modules/@types/jsonwebtoken/index.d.ts": {
         "version": "c6afd9a9be5f970240ff60b33f4a0262a5a8ea1cad4b6ea5b482d335639748f7",
         "signature": "c6afd9a9be5f970240ff60b33f4a0262a5a8ea1cad4b6ea5b482d335639748f7"
       },
       "./src/models/users.ts": {
-        "version": "3725cb9baa2b08e47d56ebf99501958e8fc1df5183b7b7cfc230d097150d80c5",
-        "signature": "7c88c562e8d34c6490c0efaa0ba47219aa31be781e9e43e29682ba70c754dd27"
+        "version": "4e75a6a238c8d6755962d066023e9f50fae73eeecd2702aeeecf1737c3f7d76a",
+        "signature": "b9365792ddb05737894e3e7a0aed2d8474a60b89f569a69e2cdb1c95370a6101"
       },
       "./node_modules/@types/base-64/index.d.ts": {
         "version": "21d88c0d7029783f305bc1b481e7209efb933bddf0bd6b232e8ef5e18a4b350b",
@@ -366,15 +370,27 @@
         "signature": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba"
       },
       "./src/middleware/basicauth.ts": {
-        "version": "651310057c4d17b31426730923920204a67d0423211576e39d22b1a42b586e2c",
-        "signature": "2567a15bc40af85daf57c02288085efe1789024da46264bf31359a7b00337071"
+        "version": "aa34ece0ee3c6ef1aff30c8269f34d5a2bc9605d6b6bebdb951c28503cb0f31d",
+        "signature": "e72aa2bf8887d074a4276dd204452dfeec324af51f749641dea374126bb5ef0b"
       },
-      "./node_modules/dotenv/types/index.d.ts": {
-        "version": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528",
-        "signature": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528"
+      "./src/middleware/bearerauth.ts": {
+        "version": "cda854953b93aaf09810b3bdff111a81a597fa3a3819e720330e142cb55c73e5",
+        "signature": "1cab6fe10bc8af3cb0b8b7e29c9723b7ca875ce597fbbe67a742f44448127b63"
+      },
+      "./src/middleware/500.ts": {
+        "version": "b94ab7648d123c5c66107f3d855bf8f581cfaa80b71cf8000ba3324c4fed9f2e",
+        "signature": "31606d0db248dad8c83abce3d4cf31f61f7cd3e6390c69121684beb8a8ecb64d"
+      },
+      "./src/middleware/404.ts": {
+        "version": "349f906b0b9909a025cfd24dffa49fdcf158045e3500caa1e90414e93f67983f",
+        "signature": "7a0e8506830e143ed1e6525ac7bb8f6a766ad2a3b408eaecf4146647ff6ab20b"
+      },
+      "./src/src/app.ts": {
+        "version": "2864590d93a93e84a65cefa0c032bd4c9e2e4c1dc8813a2531ce3a1e4a54076d",
+        "signature": "e5c88bcd3131dd47d16af1a5369ae8da358db437174e3fd80c3a2a73132fbe34"
       },
       "./src/index.ts": {
-        "version": "cda22b40382f0140995e5bc8a433220611c48952d77fa8a9efeae070af6adefb",
+        "version": "94391e2d75bd99e821fe9168eea6dba3c68e7f68932d4a26404f0b98561731a7",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       }
     },
@@ -951,6 +967,42 @@
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/dotenv/types/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/bson/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/mongodb/index.d.ts": [
+        "./node_modules/@types/bson/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/mongoose/index.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/mongodb/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/mongoose/index.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./node_modules/@types/range-parser/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1007,35 +1059,6 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./node_modules/@types/bson/index.d.ts": [
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/mongodb/index.d.ts": [
-        "./node_modules/@types/bson/index.d.ts",
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/@types/node/tls.d.ts",
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/mongoose/index.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/@types/mongodb/index.d.ts",
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/@types/mongoose/index.d.ts",
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "./node_modules/@types/jsonwebtoken/index.d.ts": [
         "./node_modules/@types/node/ts3.2/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -1069,26 +1092,55 @@
         "./node_modules/@types/base-64/index.d.ts",
         "./node_modules/@types/bcrypt/index.d.ts",
         "./node_modules/@types/jsonwebtoken/index.d.ts",
+        "./src/src/app.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./node_modules/dotenv/types/index.d.ts": [
-        "./node_modules/@types/node/ts3.2/index.d.ts",
+      "./src/middleware/bearerauth.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/src/app.ts",
+        "./node_modules/@types/base-64/index.d.ts",
+        "./node_modules/@types/jsonwebtoken/index.d.ts",
+        "./src/models/users.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/middleware/500.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/middleware/404.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/src/app.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/src/app.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/models/users.ts",
+        "./src/middleware/basicauth.ts",
+        "./node_modules/@types/bcrypt/index.d.ts",
+        "./src/middleware/bearerauth.ts",
+        "./src/middleware/500.ts",
+        "./src/middleware/404.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/index.ts": [
-        "./node_modules/@types/express/index.d.ts",
-        "./src/models/users.ts",
-        "./src/middleware/basicauth.ts",
         "./node_modules/dotenv/types/index.d.ts",
-        "./node_modules/@types/bcrypt/index.d.ts",
-        "./node_modules/@types/jsonwebtoken/index.d.ts",
         "./node_modules/@types/mongoose/index.d.ts",
+        "./src/src/app.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -1504,6 +1556,42 @@
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/dotenv/types/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/bson/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/mongodb/index.d.ts": [
+        "./node_modules/@types/bson/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/mongoose/index.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/mongodb/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/mongoose/index.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./node_modules/@types/range-parser/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1560,35 +1648,6 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./node_modules/@types/bson/index.d.ts": [
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/mongodb/index.d.ts": [
-        "./node_modules/@types/bson/index.d.ts",
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/@types/node/tls.d.ts",
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./node_modules/@types/mongoose/index.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/@types/mongodb/index.d.ts",
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/@types/mongoose/index.d.ts",
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "./node_modules/@types/jsonwebtoken/index.d.ts": [
         "./node_modules/@types/node/ts3.2/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -1612,14 +1671,23 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/middleware/basicauth.ts": [
+        "./src/src/app.ts",
         "./node_modules/@types/express/index.d.ts"
       ],
-      "./node_modules/dotenv/types/index.d.ts": [
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts"
+      "./src/middleware/bearerauth.ts": [
+        "./src/src/app.ts",
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/middleware/500.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/middleware/404.ts": [
+        "./src/src/app.ts",
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/src/app.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts",
+        "./node_modules/@types/express/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1700,6 +1768,10 @@
       "./node_modules/@types/node/ts3.2/util.d.ts",
       "./node_modules/@types/node/ts3.2/globals.d.ts",
       "./node_modules/@types/node/ts3.2/index.d.ts",
+      "./node_modules/dotenv/types/index.d.ts",
+      "./node_modules/@types/bson/index.d.ts",
+      "./node_modules/@types/mongodb/index.d.ts",
+      "./node_modules/@types/mongoose/index.d.ts",
       "./node_modules/@types/range-parser/index.d.ts",
       "./node_modules/@types/express-serve-static-core/index.d.ts",
       "./node_modules/@types/mime/index.d.ts",
@@ -1707,16 +1779,16 @@
       "./node_modules/@types/connect/index.d.ts",
       "./node_modules/@types/body-parser/index.d.ts",
       "./node_modules/@types/express/index.d.ts",
-      "./node_modules/@types/bson/index.d.ts",
-      "./node_modules/@types/mongodb/index.d.ts",
-      "./node_modules/@types/mongoose/index.d.ts",
       "./node_modules/@types/jsonwebtoken/index.d.ts",
       "./src/models/users.ts",
       "./node_modules/@types/base-64/index.d.ts",
       "./node_modules/@types/bcrypt/index.d.ts",
       "./src/middleware/basicauth.ts",
-      "./node_modules/dotenv/types/index.d.ts",
-      "./src/index.ts"
+      "./src/middleware/500.ts",
+      "./src/middleware/404.ts",
+      "./src/src/app.ts",
+      "./src/index.ts",
+      "./src/middleware/bearerauth.ts"
     ]
   },
   "version": "3.8.2"
