@@ -5,7 +5,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { ITokenedRequest } from '../src/app';
 
-
+//todo: outsource the DB operations to the users model.
 export default async function basicAuthorization(req: ITokenedRequest, res: express.Response, next: any) {
   if (!req.headers.authorization) {
     next(new Error('no authorization headers'))
@@ -20,7 +20,7 @@ export default async function basicAuthorization(req: ITokenedRequest, res: expr
     User.test() // WORKS!
     
     //find that user by username inside the db })
-    const results = await User.find({ username })
+    const results = await User.find({ username }).populate('role');
     console.log(results);
     if (results.length === 0) {
       return res.status(406).json({ message: 'Bad Credentials' })
@@ -28,7 +28,6 @@ export default async function basicAuthorization(req: ITokenedRequest, res: expr
 
       // if credentials are good, set authorization on headers.
       if (await bcrypt.compare(password, results[0].password)) {
-        //todo: Need to stick a token on the request object somehow. 
         req.token = jwt.sign({ username: username, email: results[0].email }, process.env.SECRET); 
         next();
       } else {

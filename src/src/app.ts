@@ -3,38 +3,42 @@ import User from '../models/users';
 import basicAuth from '../middleware/basicAuth'
 import bcrypt from 'bcrypt';
 import bearerAuth from '../middleware/bearerAuth';
+import Role from '../models/roles'
 
+import acl from '../middleware/accessControlList'
+
+
+//consts
+const chickens = [
+  { name: 'chickety china', username: 'the chinese chicken' }
+]
 //interfaces
 export interface ITokenedRequest extends express.Request {
   token?: string;
-  user?: string;
+  user?: { [key: string]: any};
   bearer?: string | {[key: string]: any}
 }
 
 const app = express();
-
 app.use(express.json());
 
-//functions
-
-//get the username and password from the body
-//insert a person into the DB
-//issue a token.
+//auth routes
 app.post('/signup', async (req, res) => {
-
+  
   //create instance of model with new user data. And save to DB
   const newUser = new User({
     username: req.body.username,
     email: req.body.email,
     password: await bcrypt.hash(req.body.password, 5),
+    role: await Role.findOne({name: req.body.role})
   })
   newUser.save()
-    .then(results => {
-
-      //issue a token in the response.
-      res.status(201).json({ token: newUser.generateToken() })
-    })
-    .catch(err => res.status(406).json({ error: err.message }));
+  .then(results => {
+    
+    //issue a token in the response.
+    res.status(201).json({ token: newUser.generateToken() })
+  })
+  .catch(err => res.status(406).json({ error: err.message }));
 })
 
 //get all users from db.
@@ -53,10 +57,17 @@ app.post('/signin', basicAuth, (req: ITokenedRequest , res) => {
   res.status(200).json({ token: req.token} )
 })
 
-//todo: user bearerAuth middleware to authenticate bearer credentials. 
-app.post('/betterlogin', bearerAuth, (req, res, next) => {
- res.status(200).json({message: 'signed in'}) 
+app.post('/betterlogin', bearerAuth, acl('read'), (req, res, next) => {
+  res.status(200).json({message: 'signed in'}) 
 })
+
+app.get('/chickens', bearerAuth, acl('admin'), (req, res, next) => {
+  res.status(200).json(chickens);
+})
+
+//roles routes
+import rolesRouter from './rolesRouter';
+app.use(rolesRouter);
 
 //catch alls
 import serverErrorHandler from '../middleware/500';

@@ -358,7 +358,7 @@
         "signature": "c6afd9a9be5f970240ff60b33f4a0262a5a8ea1cad4b6ea5b482d335639748f7"
       },
       "./src/models/users.ts": {
-        "version": "4e75a6a238c8d6755962d066023e9f50fae73eeecd2702aeeecf1737c3f7d76a",
+        "version": "758f9fb54a5538b5f9f8bd32282786b099c9c782b980be442e7ecc30ab473f02",
         "signature": "b9365792ddb05737894e3e7a0aed2d8474a60b89f569a69e2cdb1c95370a6101"
       },
       "./node_modules/@types/base-64/index.d.ts": {
@@ -370,24 +370,36 @@
         "signature": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba"
       },
       "./src/middleware/basicauth.ts": {
-        "version": "aa34ece0ee3c6ef1aff30c8269f34d5a2bc9605d6b6bebdb951c28503cb0f31d",
+        "version": "98c73e5b583960454bdcd18a8ddccfeebfce48ec2b61d8e01e7178e702323147",
         "signature": "e72aa2bf8887d074a4276dd204452dfeec324af51f749641dea374126bb5ef0b"
       },
       "./src/middleware/bearerauth.ts": {
-        "version": "cda854953b93aaf09810b3bdff111a81a597fa3a3819e720330e142cb55c73e5",
+        "version": "4242f33f93a062271027f4ba13d4622d2603c4130eb4b464b3bd93a96367c85e",
         "signature": "1cab6fe10bc8af3cb0b8b7e29c9723b7ca875ce597fbbe67a742f44448127b63"
+      },
+      "./src/models/roles.ts": {
+        "version": "67f724837d5bb6394d35d18f3b9edb30bd66e750c74062bbb7a413c29cfba98c",
+        "signature": "a55eec17af0cde21c2ddf5d755481743ea31c6e07f690bf29ff61dcb1bf7a819"
+      },
+      "./src/middleware/accesscontrollist.ts": {
+        "version": "b659f449e80bdcac64345f03285fb00f74785ea578942fa85f1fc58dc6511add",
+        "signature": "f14b694f8cd869323f223f1b7256281fe3be2f4ca2a426a20942330a5cd5422c"
+      },
+      "./src/src/rolesrouter.ts": {
+        "version": "5cc899ab2cafd31c07df6d2b5e200591a6e629dea0df6b82af0fb913c9c71ad9",
+        "signature": "2623ac8881a9e9c85b94b9a9a011f137f00a3fbea4bd9695929b4c774e6ddcdc"
       },
       "./src/middleware/500.ts": {
         "version": "b94ab7648d123c5c66107f3d855bf8f581cfaa80b71cf8000ba3324c4fed9f2e",
         "signature": "31606d0db248dad8c83abce3d4cf31f61f7cd3e6390c69121684beb8a8ecb64d"
       },
       "./src/middleware/404.ts": {
-        "version": "349f906b0b9909a025cfd24dffa49fdcf158045e3500caa1e90414e93f67983f",
+        "version": "c9d99f5307b6f09294e9bda726d2fc75f5123cdc8639b57efe1d28a2b7f28c65",
         "signature": "7a0e8506830e143ed1e6525ac7bb8f6a766ad2a3b408eaecf4146647ff6ab20b"
       },
       "./src/src/app.ts": {
-        "version": "2864590d93a93e84a65cefa0c032bd4c9e2e4c1dc8813a2531ce3a1e4a54076d",
-        "signature": "e5c88bcd3131dd47d16af1a5369ae8da358db437174e3fd80c3a2a73132fbe34"
+        "version": "407b7a43866e89898e92adca6bf2894f11085a2c320a43967d62d8662750b440",
+        "signature": "a2fff71bcdf595173c8936d93e7f1488d1338464543a7d2a43abc06a094e6245"
       },
       "./src/index.ts": {
         "version": "94391e2d75bd99e821fe9168eea6dba3c68e7f68932d4a26404f0b98561731a7",
@@ -1109,6 +1121,29 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./src/models/roles.ts": [
+        "./node_modules/@types/mongoose/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/middleware/accesscontrollist.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/src/app.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/src/rolesrouter.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/models/roles.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./src/middleware/500.ts": [
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -1130,6 +1165,9 @@
         "./src/middleware/basicauth.ts",
         "./node_modules/@types/bcrypt/index.d.ts",
         "./src/middleware/bearerauth.ts",
+        "./src/models/roles.ts",
+        "./src/middleware/accesscontrollist.ts",
+        "./src/src/rolesrouter.ts",
         "./src/middleware/500.ts",
         "./src/middleware/404.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -1678,6 +1716,16 @@
         "./src/src/app.ts",
         "./node_modules/@types/express/index.d.ts"
       ],
+      "./src/models/roles.ts": [
+        "./node_modules/@types/mongoose/index.d.ts"
+      ],
+      "./src/middleware/accesscontrollist.ts": [
+        "./src/src/app.ts",
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/src/rolesrouter.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
       "./src/middleware/500.ts": [
         "./node_modules/@types/express/index.d.ts"
       ],
@@ -1784,11 +1832,14 @@
       "./node_modules/@types/base-64/index.d.ts",
       "./node_modules/@types/bcrypt/index.d.ts",
       "./src/middleware/basicauth.ts",
+      "./src/middleware/bearerauth.ts",
+      "./src/models/roles.ts",
+      "./src/middleware/accesscontrollist.ts",
+      "./src/src/rolesrouter.ts",
       "./src/middleware/500.ts",
       "./src/middleware/404.ts",
-      "./src/src/app.ts",
       "./src/index.ts",
-      "./src/middleware/bearerauth.ts"
+      "./src/src/app.ts"
     ]
   },
   "version": "3.8.2"

@@ -25,7 +25,8 @@ interface IUsersModel extends mongoose.Model<IUsersDocument> { //Our IUsersModel
 const usersSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true, select: true },
   password: { type: String, required: true, select: true },
-  email: { type: String, required: true, select: true }
+  email: { type: String, required: true, select: true },
+  role: { type: mongoose.Schema.Types.ObjectId, ref: 'Role' }
 })
 
 
@@ -35,7 +36,8 @@ const Model = mongoose.model<IUsersDocument, IUsersModel>('users', usersSchema);
 Model.prototype.generateToken = function () {
   const tokenData = {
     username: this.username,
-    email: this.email
+    email: this.email,
+    permissions: this.role.permissions || []
   }
   return jwt.sign(tokenData, process.env.SECRET);
 }
