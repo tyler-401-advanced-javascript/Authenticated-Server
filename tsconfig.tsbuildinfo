@@ -370,11 +370,11 @@
         "signature": "18b9a9702d2fc7d3766b0c8124133c761ad25a9d767925005777eb2c2cd8aeba"
       },
       "./src/middleware/basicauth.ts": {
-        "version": "98c73e5b583960454bdcd18a8ddccfeebfce48ec2b61d8e01e7178e702323147",
+        "version": "6b38fd46acb3a5965ce1ec37cf918e9b2b85b84189ae384fe57248af500bb81e",
         "signature": "e72aa2bf8887d074a4276dd204452dfeec324af51f749641dea374126bb5ef0b"
       },
       "./src/middleware/bearerauth.ts": {
-        "version": "4242f33f93a062271027f4ba13d4622d2603c4130eb4b464b3bd93a96367c85e",
+        "version": "76aa79d3274582308ded873788f3afb26d80c683a9e49f2e5f38d978ed91b867",
         "signature": "1cab6fe10bc8af3cb0b8b7e29c9723b7ca875ce597fbbe67a742f44448127b63"
       },
       "./src/models/roles.ts": {
@@ -382,15 +382,15 @@
         "signature": "a55eec17af0cde21c2ddf5d755481743ea31c6e07f690bf29ff61dcb1bf7a819"
       },
       "./src/middleware/accesscontrollist.ts": {
-        "version": "b659f449e80bdcac64345f03285fb00f74785ea578942fa85f1fc58dc6511add",
-        "signature": "f14b694f8cd869323f223f1b7256281fe3be2f4ca2a426a20942330a5cd5422c"
+        "version": "0c51bc27adcb4372f7a0a421dd4718bb28c2c4bfa5393c9387bf2869f528971d",
+        "signature": "617410b575b234cbe54a328017ead5d2936622b57762286695751f1be59bdc94"
       },
       "./src/src/rolesrouter.ts": {
         "version": "5cc899ab2cafd31c07df6d2b5e200591a6e629dea0df6b82af0fb913c9c71ad9",
         "signature": "2623ac8881a9e9c85b94b9a9a011f137f00a3fbea4bd9695929b4c774e6ddcdc"
       },
       "./src/middleware/500.ts": {
-        "version": "b94ab7648d123c5c66107f3d855bf8f581cfaa80b71cf8000ba3324c4fed9f2e",
+        "version": "9652b4c03fc7dbdeee043fd49e5fe4ba93e3b0b5f4392b917cd5d37a9547806c",
         "signature": "31606d0db248dad8c83abce3d4cf31f61f7cd3e6390c69121684beb8a8ecb64d"
       },
       "./src/middleware/404.ts": {
@@ -398,7 +398,7 @@
         "signature": "7a0e8506830e143ed1e6525ac7bb8f6a766ad2a3b408eaecf4146647ff6ab20b"
       },
       "./src/src/app.ts": {
-        "version": "407b7a43866e89898e92adca6bf2894f11085a2c320a43967d62d8662750b440",
+        "version": "1a9b37741ca09ac3350627ea4ff4e608503d4824fa5bb0f84e4bc32f88dd567f",
         "signature": "a2fff71bcdf595173c8936d93e7f1488d1338464543a7d2a43abc06a094e6245"
       },
       "./src/index.ts": {
@@ -1834,11 +1834,11 @@
       "./src/middleware/basicauth.ts",
       "./src/middleware/bearerauth.ts",
       "./src/models/roles.ts",
-      "./src/middleware/accesscontrollist.ts",
       "./src/src/rolesrouter.ts",
       "./src/middleware/500.ts",
       "./src/middleware/404.ts",
       "./src/index.ts",
+      "./src/middleware/accesscontrollist.ts",
       "./src/src/app.ts"
     ]
   },

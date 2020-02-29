@@ -8,6 +8,7 @@ import { ITokenedRequest } from '../src/app';
 //todo: outsource the DB operations to the users model.
 export default async function basicAuthorization(req: ITokenedRequest, res: express.Response, next: any) {
   if (!req.headers.authorization) {
+    console.log('no authorization headers, basic');
     next(new Error('no authorization headers'))
   } else {
 //oh yes

@@ -57,12 +57,12 @@ app.post('/signin', basicAuth, (req: ITokenedRequest , res) => {
   res.status(200).json({ token: req.token} )
 })
 
-app.post('/betterlogin', bearerAuth, acl('read'), (req, res, next) => {
-  res.status(200).json({message: 'signed in'}) 
+app.post('/betterlogin', bearerAuth, acl('read'), (req: ITokenedRequest, res, next) => {
+  res.status(200).json({message: 'signed in', token: req.token}) 
 })
 
-app.get('/chickens', bearerAuth, acl('admin'), (req, res, next) => {
-  res.status(200).json(chickens);
+app.get('/chickens', bearerAuth, acl('admin'), (req: ITokenedRequest, res, next) => {
+  res.status(200).json({chickens, token: req.token});
 })
 
 //roles routes
